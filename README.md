@@ -26,7 +26,7 @@ Mock 서버가 `http://localhost:3001`에서 실행됩니다.
 ```bash
 yarn start
 ```
-애플리케이션이 `http://localhost:3000`에서 실행됩니다.
+애플리케이션이 `http://localhost:3000`에서 실행됩니다. 서버 CORS 설정으로 인해 3000번 포트를 이용해야 합니다.
 
 ### 트러블슈팅
 - `yarn install`시 패키지 설치가 안될 경우, 최상단에 있는 `yarn.lock`파일을 삭제 후 시도해보세요.
