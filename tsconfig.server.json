@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2020",
+    "noEmit": false,
+    "outDir": "./dist"
+  },
+  "include": ["src/mocks/**/*"]
+}
