@@ -3,6 +3,13 @@
 칸반 보드 스타일의 할일 관리 애플리케이션입니다. 드래그 앤 드롭을 통해 태스크의 상태를 손쉽게 변경할 수 있어요. 총 4개 상태(진행전, 진행중, 완료, 아카이브)로 태스크를 관리해요.
 
 
+
+
+https://github.com/user-attachments/assets/1fc54e71-00ee-453a-960a-da24e81afb0d
+
+
+
+
 ## 🚀 로컬 실행 방법
 
 ### version
@@ -31,6 +38,8 @@ yarn start
 ### 트러블슈팅
 - `yarn install`시 패키지 설치가 안될 경우, 최상단에 있는 `yarn.lock`파일을 삭제 후 시도해보세요.
 
+
+
 ## ✨ 주요 기능
 
 - 드래그 앤 드롭: 직관적인 상태 변경 - `@hello-pangea/dnd`
@@ -38,18 +47,20 @@ yarn start
 - 스크롤 그림자: 스크롤 가능 여부를 시각적으로 표시 
 - 모달 편집: 오버레이를 통한 할일 편집 - `framer-motion`, `overlay-kit`
 
+  
+
 ## 🎯 기술 선택 이유
 
 ### react query
-- `useInfiniteQuery`로 간편한 페이지네이션
+- `useInfiniteQuery`로 간편한 페이지네이션 구현 가능
 
 ### emtoion
 - css-in-js 중 준수한 런타임 성능
 - material ui와 같은디자인 시스템을 사용할 수 없는 한계로 인해 사용
-    - 
 
 ### @hello-pangea/dnd
 - `react-beautiful-dnd(deprecaated)` 숙련도가 높다보니 동일한 인터페이스를 제공해주는 해당 라이브러리 선택
+
 
 
 ## 📁 디렉토리 구조
@@ -70,6 +81,8 @@ src/
 │ └── server.ts # Express 서버
 └── types/ # ts interface 정의
 ```
+
+
 
 ## ⚠️ 제약사항 및 추가 작업
 - 태스크를 드래그 앤 드롭으로 다른 상태로 변경 시 상태 드롭한 컬럼영역에서 index가 꼬이는 이슈
